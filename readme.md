@@ -27,12 +27,15 @@ To use Unfuddle Add Repo:
 
        <unfuddleaddrepo
             subdomain="${unfuddleSubdomain}"
-            projectid="${svnProjectId}"
-            username="${svnUsername}"
-            password="${svnPassword}"
-            abbreviation="${svnAbbreviation}"
-            title="${svnAbbreviation}"
+            projectid="${ProjectId}"
+            username="${unfuddleUsername}"
+            password="${unfuddlePassword}"
+            abbreviation="${repoAbbreviation}"
+            title="${repoTitle}"
             system="svn"
             />
+
+I am yet to test it but if you change the system attribute to be ``git`` rather than ``svn`` then you should get a new git repo setup for you.
+
 [phingmanual]: http://phing.info/docs/guide/current/
 [daveblog]: http://codeinthehole.com/archives/15-Phing-task-to-create-an-Unfuddle-message.html
