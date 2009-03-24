@@ -8,11 +8,13 @@ Please see the [phing manual][phingmanual] for more information on installing ph
 * Copy the supplied folders there
 * In your phing build script you need to define the new tasks at the top of your project
 
-    <taskdef name="svnimport" classname="phing.tasks.ext.svn.SvnImportTask" />
-    <taskdef name="unfuddleaddrepo" classname="phing.tasks.ext.unfuddle.UnfuddleAddRepoTask" />
+      <taskdef name="svnimport" classname="phing.tasks.ext.svn.SvnImportTask" />
+      <taskdef name="unfuddleaddrepo" classname="phing.tasks.ext.unfuddle.UnfuddleAddRepoTask" />
+
 ## Usage
 To use SvnImport:
-    <svnimport
+
+       <svnimport
             repositoryurl=""
             fromdir=""
             message="Commit message goes here"
@@ -21,7 +23,8 @@ To use SvnImport:
             />
 
 To use Unfuddle Add Repo:
-    <unfuddleaddrepo
+
+       <unfuddleaddrepo
             subdomain="${unfuddleSubdomain}"
             projectid="${svnProjectId}"
             username="${svnUsername}"
