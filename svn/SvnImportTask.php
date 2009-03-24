@@ -23,14 +23,12 @@ require_once 'phing/Task.php';
 require_once 'phing/tasks/ext/svn/SvnBaseTask.php';
 
 /**
- * Exports/checks out a repository to a local directory
+ * Imports a directory into a repository
  * with authentication 
  *
- * @author Michiel Rook <michiel.rook@gmail.com>
- * @author Andrew Eddie <andrew.eddie@jamboworks.com> 
- * @version $Id: SvnExportTask.php 363 2008-04-10 16:06:37Z tiddy $
+ * @author Simon Holywell 
+ * @version $Id: SvnImportTask.php 
  * @package phing.tasks.ext.svn
- * @since 2.2.0
  */
 class SvnImportTask extends SvnBaseTask
 {
